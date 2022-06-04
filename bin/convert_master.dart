@@ -4,10 +4,22 @@ import 'dart:io';
 
 import 'package:excel/excel.dart';
 
-const List<String> languageKeys = ["en_US", "tl_PH", "id_ID",];
+const List<String> languageKeys = [
+  "en_US",
+  "tl_PH",
+  "id_ID",
+  "fr_FR",
+  "es_ES",
+  "ms_MY",
+  "zh",
+  "vi_VN",
+  "ja_JP",
+  "hi",
+  "bn",
+  ];
 
 Future<void> writeJsonFile(Sheet? sheet, String key, {bool createDartFile = false,}) async {
-  final jsonFile = File("$key.json",);
+  final jsonFile = File("results/$key.json",);
   var map = <String, String?>{};
   sheet?.rows.forEach(
     (List<Data?> dataRow) {
@@ -18,13 +30,14 @@ Future<void> writeJsonFile(Sheet? sheet, String key, {bool createDartFile = fals
       }
     },
   );
+  map = SplayTreeMap.from(map,);
   jsonFile.writeAsString(
     JsonEncoder.withIndent("\t",).convert(
       map,
     ),
   );
   if (createDartFile) {
-    final writer = File("localization_keys.dart",).openWrite();
+    final writer = File("results/localization_keys.dart",).openWrite();
     writer.writeln(
       "class Translated {",
     );

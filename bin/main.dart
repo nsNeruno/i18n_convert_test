@@ -4,7 +4,7 @@ import 'dart:io';
 
 import 'package:excel/excel.dart';
 
-const List<String> languageKeys = ["en_US", "tl_PH", "id_ID",];
+const List<String> languageKeys = ["en_US", "tl_PH", "id_ID", "fr_FR", "es_ES"];
 
 Map<String, String?> readOldSheet(Sheet? sheet, [int valueIndex = 1,]) {
   var map = <String, String?>{};
@@ -92,7 +92,7 @@ void main(List<String> args) async {
   bytes = await File("DigLog_mPOS_i18n - translated.xlsx",).readAsBytes();
   excel = Excel.decodeBytes(bytes,);
   final Map<String, Map<String, String?>> result = readPatchExcelFile(
-    excel, "New Patches",
+    excel, "P2022_02_16",
   );
   for (String key in languageKeys) {
     master[key] = mergeSorted(master[key], result[key],);

@@ -2,6 +2,7 @@ class Translated {
 
 	Translated._();
 
+	static const aboutThisPlan = "aboutThisPlan";
 	static const aboutUs = "aboutUs";
 	static const absent = "absent";
 	static const accountNumber = "accountNumber";
@@ -13,6 +14,8 @@ class Translated {
 	static const activity = "activity";
 	static const actualDaysInMonth = "actualDaysInMonth";
 	static const add = "add";
+	static const addBulkItems = "addBulkItems";
+	static const addBulkItemsInstruction = "addBulkItemsInstruction";
 	static const addItemBulk = "addItemBulk";
 	static const addItemBulkTemplate = "addItemBulkTemplate";
 	static const addItemByCode = "addItemByCode";
@@ -47,9 +50,11 @@ class Translated {
 	static const admins = "admins";
 	static const advance = "advance";
 	static const advancePayment = "advancePayment";
+	static const affiliateCode = "affiliateCode";
 	static const agreementStatement = "agreementStatement";
 	static const alert = "alert";
 	static const all = "all";
+	static const allInOneFreeTrial = "allInOneFreeTrial";
 	static const allProducts = "allProducts";
 	static const allSomething = "allSomething";
 	static const allTransactions = "allTransactions";
@@ -93,6 +98,7 @@ class Translated {
 	static const artilcleSubtitleStock = "artilcleSubtitleStock";
 	static const assign = "assign";
 	static const assignSomething = "assignSomething";
+	static const attachCompletedTemplate = "attachCompletedTemplate";
 	static const attachmentUpload = "attachmentUpload";
 	static const attachmentUploadFailed = "attachmentUploadFailed";
 	static const attendance = "attendance";
@@ -137,6 +143,7 @@ class Translated {
 	static const breakTimeStartTime = "breakTimeStartTime";
 	static const browseMore = "browseMore";
 	static const bulkImageGuide = "bulkImageGuide";
+	static const bulkTemplate = "bulkTemplate";
 	static const bundle = "bundle";
 	static const bundleComponent = "bundleComponent";
 	static const bundleToggle = "bundleToggle";
@@ -194,17 +201,20 @@ class Translated {
 	static const camera = "camera";
 	static const cancel = "cancel";
 	static const cancelNote = "cancelNote";
+	static const cancelSubsWarning = "cancelSubsWarning";
 	static const cancelled = "cancelled";
 	static const cancelledBulkUpload = "cancelledBulkUpload";
 	static const cancelledDate = "cancelledDate";
 	static const cannotUseOffline = "cannotUseOffline";
 	static const carrierName = "carrierName";
+	static const cart = "cart";
 	static const cash = "cash";
 	static const cashBook = "cashBook";
 	static const cashChange = "cashChange";
 	static const cashInHand = "cashInHand";
 	static const cashOnDelivery = "cashOnDelivery";
 	static const cashReceived = "cashReceived";
+	static const cashSubsAffiliateHint = "cashSubsAffiliateHint";
 	static const cashier = "cashier";
 	static const catalogOf = "catalogOf";
 	static const catalogSetup = "catalogSetup";
@@ -227,6 +237,7 @@ class Translated {
 	static const chooseDefaultDelivery = "chooseDefaultDelivery";
 	static const chooseSpecificDelivArea = "chooseSpecificDelivArea";
 	static const chooseSubscriptionPlan = "chooseSubscriptionPlan";
+	static const chooseThisPlan = "chooseThisPlan";
 	static const chosenRolesCount = "chosenRolesCount";
 	static const city = "city";
 	static const cityName = "cityName";
@@ -264,6 +275,7 @@ class Translated {
 	static const computerGeneratedNotice = "computerGeneratedNotice";
 	static const configureMerchantDetails = "configureMerchantDetails";
 	static const confirm = "confirm";
+	static const confirmCancelPurchaseOrder = "confirmCancelPurchaseOrder";
 	static const confirmClockOut = "confirmClockOut";
 	static const confirmDelete = "confirmDelete";
 	static const confirmDeleteCashBook = "confirmDeleteCashBook";
@@ -276,6 +288,7 @@ class Translated {
 	static const confirmRemoveFromCart = "confirmRemoveFromCart";
 	static const confirmResetPhone = "confirmResetPhone";
 	static const confirmSubmitWorkTime = "confirmSubmitWorkTime";
+	static const confirmSubsChange = "confirmSubsChange";
 	static const confirmation = "confirmation";
 	static const contactAccessNotGranted = "contactAccessNotGranted";
 	static const contactEmail = "contactEmail";
@@ -314,6 +327,7 @@ class Translated {
 	static const currentMonth = "currentMonth";
 	static const currentStatus = "currentStatus";
 	static const currentSubsType = "currentSubsType";
+	static const currentSubscription = "currentSubscription";
 	static const customer = "customer";
 	static const customerBirthDate = "customerBirthDate";
 	static const customerBuys = "customerBuys";
@@ -335,6 +349,7 @@ class Translated {
 	static const dateRange = "dateRange";
 	static const dateReceived = "dateReceived";
 	static const dateToDate = "dateToDate";
+	static const dayXOfY = "dayXOfY";
 	static const declined = "declined";
 	static const deduction = "deduction";
 	static const deductionAmount = "deductionAmount";
@@ -353,6 +368,7 @@ class Translated {
 	static const delivery = "delivery";
 	static const deliveryArea = "deliveryArea";
 	static const deliveryDate = "deliveryDate";
+	static const deliveryDetails = "deliveryDetails";
 	static const deliveryFee = "deliveryFee";
 	static const deliveryInformation = "deliveryInformation";
 	static const deliveryPrice = "deliveryPrice";
@@ -424,6 +440,7 @@ class Translated {
 	static const employeeSchedule = "employeeSchedule";
 	static const employeeSchedules = "employeeSchedules";
 	static const employeeStaffId = "employeeStaffId";
+	static const employeeUserId = "employeeUserId";
 	static const employees = "employees";
 	static const employmentDetails = "employmentDetails";
 	static const employmentType = "employmentType";
@@ -497,6 +514,8 @@ class Translated {
 	static const fnb = "fnb";
 	static const food = "food";
 	static const foodItem = "foodItem";
+	static const footer = "footer";
+	static const forPickup = "forPickup";
 	static const forSmallMidBusiness = "forSmallMidBusiness";
 	static const forgotYourPassword = "forgotYourPassword";
 	static const fortnight = "fortnight";
@@ -526,11 +545,13 @@ class Translated {
 	static const hasBeenDeletedSuccessfullyThe = "hasBeenDeletedSuccessfullyThe";
 	static const hasBeenDeletedThe = "hasBeenDeletedThe";
 	static const hasBeenUpdated = "hasBeenUpdated";
+	static const header = "header";
 	static const hello = "hello";
 	static const helpAndSupport = "helpAndSupport";
 	static const helpCenter = "helpCenter";
 	static const here = "here";
 	static const hi = "hi";
+	static const hintAddByTap = "hintAddByTap";
 	static const hintAddItems = "hintAddItems";
 	static const hintBusinessDetails = "hintBusinessDetails";
 	static const hintBusinessLocation = "hintBusinessLocation";
@@ -575,11 +596,13 @@ class Translated {
 	static const inHouseDelivery = "inHouseDelivery";
 	static const inStore = "inStore";
 	static const in_ = "in_";
+	static const includedServices = "includedServices";
 	static const incompleteInformation = "incompleteInformation";
 	static const india = "india";
 	static const indonesia = "indonesia";
 	static const indonesianRupiah = "indonesianRupiah";
 	static const info = "info";
+	static const information = "information";
 	static const initialStock = "initialStock";
 	static const instant = "instant";
 	static const insufficientAmount = "insufficientAmount";
@@ -864,8 +887,10 @@ class Translated {
 	static const order = "order";
 	static const orderDetails = "orderDetails";
 	static const orderFromFilter = "orderFromFilter";
+	static const orderFulfillment = "orderFulfillment";
 	static const orderHistory = "orderHistory";
 	static const orderId = "orderId";
+	static const orderManagement = "orderManagement";
 	static const orderNote = "orderNote";
 	static const orderPlacedOn = "orderPlacedOn";
 	static const orderPlacementDate = "orderPlacementDate";
@@ -921,6 +946,7 @@ class Translated {
 	static const paymentInformation = "paymentInformation";
 	static const paymentMethod = "paymentMethod";
 	static const paymentMode = "paymentMode";
+	static const paymentRedirectMessage = "paymentRedirectMessage";
 	static const paymentReminder = "paymentReminder";
 	static const paymentStatus = "paymentStatus";
 	static const paymentSuccessful = "paymentSuccessful";
@@ -1015,6 +1041,7 @@ class Translated {
 	static const profileSettings = "profileSettings";
 	static const promotion = "promotion";
 	static const promotions = "promotions";
+	static const promotionsManagement = "promotionsManagement";
 	static const promptSelectPOAddress = "promptSelectPOAddress";
 	static const promptZeroBothSellPriceStock = "promptZeroBothSellPriceStock";
 	static const promptZeroSellPrice = "promptZeroSellPrice";
@@ -1158,6 +1185,7 @@ class Translated {
 	static const serviceList = "serviceList";
 	static const serviceOrder = "serviceOrder";
 	static const serviceOrderHistory = "serviceOrderHistory";
+	static const serviceOrderManagement = "serviceOrderManagement";
 	static const serviceSellPrice = "serviceSellPrice";
 	static const set = "set";
 	static const setA = "setA";
@@ -1251,10 +1279,14 @@ class Translated {
 	static const submit = "submit";
 	static const submitAttendanceWith = "submitAttendanceWith";
 	static const submitTimetracking = "submitTimetracking";
+	static const subsHasCancelled = "subsHasCancelled";
+	static const subsNotActiveYet = "subsNotActiveYet";
+	static const subsPaymentSuccess = "subsPaymentSuccess";
 	static const subscribe = "subscribe";
 	static const subscriptionActivate = "subscriptionActivate";
 	static const subscriptionAmount = "subscriptionAmount";
 	static const subscriptionExpired = "subscriptionExpired";
+	static const subscriptionExpiredShort = "subscriptionExpiredShort";
 	static const subscriptionPayment = "subscriptionPayment";
 	static const subscriptionSettings = "subscriptionSettings";
 	static const subtotal = "subtotal";
@@ -1392,9 +1424,11 @@ class Translated {
 	static const unknown = "unknown";
 	static const unlimited = "unlimited";
 	static const unpaid = "unpaid";
+	static const unsubscribe = "unsubscribe";
 	static const untilDate = "untilDate";
 	static const upcoming = "upcoming";
 	static const update = "update";
+	static const updateAffiliateCode = "updateAffiliateCode";
 	static const updateFailedWReason = "updateFailedWReason";
 	static const updateFrom = "updateFrom";
 	static const updateNotAllowed = "updateNotAllowed";
@@ -1469,6 +1503,7 @@ class Translated {
 	static const writeYourMessages = "writeYourMessages";
 	static const year = "year";
 	static const yes = "yes";
+	static const yesChangePlan = "yesChangePlan";
 	static const yesPlease = "yesPlease";
 	static const youHaveSuccessfullyAdded = "youHaveSuccessfullyAdded";
 	static const youHaveSuccessfullyAddedAn = "youHaveSuccessfullyAddedAn";
