@@ -16,10 +16,16 @@ const List<String> languageKeys = [
   "ja_JP",
   "hi",
   "bn",
+  "te",
+  "my",
+  "ar",
   ];
 
 Future<void> writeJsonFile(Sheet? sheet, String key, {bool createDartFile = false,}) async {
   final jsonFile = File("results/$key.json",);
+  if (!await jsonFile.exists()) {
+    await jsonFile.create(recursive: true,);
+  }
   var map = <String, String?>{};
   sheet?.rows.forEach(
     (List<Data?> dataRow) {
@@ -58,11 +64,12 @@ Future<void> writeJsonFile(Sheet? sheet, String key, {bool createDartFile = fals
 }
 
 void main(List<String> args,) async {
-  var bytes = await File("DigLog_mPOS_i18n - Master.xlsx",).readAsBytes();
+  var bytes = await File("DizLog_mPOS_i18n - Master.xlsx",).readAsBytes();
   var excel = Excel.decodeBytes(bytes,);
   for (int i = 0; i < languageKeys.length; i++) {
     final String key = languageKeys[i];
     var sheet = excel.sheets[key];
     writeJsonFile(sheet, key, createDartFile: i == 0,);
   }
+  Process.run("open", ["results",],);
 }
