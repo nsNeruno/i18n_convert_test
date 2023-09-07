@@ -1,5 +1,4 @@
 import 'dart:collection';
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:excel/excel.dart';
@@ -20,6 +19,7 @@ Map<String, String?> readOldSheet(Sheet? sheet, [int valueIndex = 1,]) {
   return map;
 }
 
+/*
 void _writeSheet(Sheet? sheet, String fileName, {
   int valueIndex = 1, bool createDartFile = false,
 }) {
@@ -50,6 +50,7 @@ void _writeSheet(Sheet? sheet, String fileName, {
     writer.write("}",);
   }
 }
+*/
 
 Map<String, Map<String, String?>> readPatchExcelFile(Excel excel, String patchSheetName,) {
   final sheet = excel[patchSheetName];
